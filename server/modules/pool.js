@@ -4,6 +4,8 @@ const pool = new pg.Pool({
   database: "koala_holla",
   host: "localhost",
   port: 5432,
+  password: "password",
+  user: "postgres",
 });
 
 module.exports = pool;

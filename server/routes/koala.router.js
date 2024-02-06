@@ -62,6 +62,7 @@ koalaRouter.put("/:id", (req, res) => {
     .query(sqlQuery, sqlParams)
     .then((response) => {
       console.log(`PUT /koalas/${koalaId} succeeded!`);
+      res.sendStatus(200);
     })
     .catch((err) => {
       console.log("PUT /koalas/:id failed", err);
